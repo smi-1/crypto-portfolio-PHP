@@ -1,0 +1,103 @@
+form th {}
+
+table {
+    border-collapse: collapse;
+}
+
+.add_coin {
+    background: #202020ea;
+    font-size: 0.98rem;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Inter' !important;
+}
+
+.add_coin option {
+    background: #202020;
+    font-size: 0.98rem;
+    font-family: 'Inter' !important;
+    border: none;
+}
+
+.add_coin_form {
+    gap: 10px;
+    display: flex;
+}
+
+.portfolio_item {
+
+    width: fit-content;
+    padding: 3px;
+    border-radius: 8px;
+    margin: 0px 0px 8px 0;
+    background: #2020204f;
+}
+
+.add_amount {
+    background: #202020ea;
+    font-size: 0.98rem;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    width: 100px;
+}
+
+.add_submit {
+    background: #2077feeb;
+    font-size: 0.8rem;
+    padding: 8px 13px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+}
+
+.menu {
+    color: red;
+    opacity: 0;
+    border-radius: 4px;
+    font-size: 14px;
+    padding-right: 3px;
+    color: white;
+    padding: 1px 3px;
+    margin-left: auto;
+    display: flex;
+    gap: 4px;
+}
+
+.menu input {
+    background: none;
+    border: none;
+    text-align: right;
+}
+
+.menu input[type="text"] {
+    background: #2020204f;
+    margin-left: auto;
+}
+
+.menu input {
+
+    padding: 1px 4px;
+border-radius: 5px;
+font-size: 13px;
+}
+
+.menu input[type="submit"] {
+
+    height: 18px;
+    text-align: center;
+    font-size: 10px;
+    padding: 1px 5px;
+    background-size: 16px;
+    background-position: center;
+    background: #009efd;
+font-weight: 700;
+background-size: cover;
+background-image: linear-gradient(127deg, #009efd, magenta);
+
+}
+tr:hover .menu {
+    opacity: 1;
+    transition: all 125ms ease;
+}
