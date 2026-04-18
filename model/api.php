@@ -1,8 +1,12 @@
 <?php
 require __DIR__ . "/../settings.php";
+require __DIR__ . "/../vendor/autoload.php";
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
+
 global $api_key;
-// API KEY HERE, .env prefered
-$api_key = "";
+$api_key = $_ENV['API_KEY'];
 /*
     Coinmarketcap API class
 */

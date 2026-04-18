@@ -1,13 +1,21 @@
 <?php
+require_once __DIR__ . '/../vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
+
 // Mysqli class for the $db instance
 class DB extends mysqli
 {
-    // Constructor, database name as an argument
-    public function __construct($dbname = 'crypto')
+    public function __construct($dbname = null)
     {
         try {
-            // Database information
-            parent::__construct('localhost', 'username', 'password', $dbname);
+            parent::__construct(
+                $_ENV['DB_HOST'],
+                $_ENV['DB_USER'],
+                $_ENV['DB_PASS'],
+                $dbname ?? $_ENV['DB_NAME']
+            );
         } catch (Exception $e) {
             echo "<pre>" . print_r($e, 1) . "</pre>";
         }
