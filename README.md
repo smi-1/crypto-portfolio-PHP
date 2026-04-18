@@ -1,6 +1,6 @@
 # Crypto Portfolio PHP
 
-Full stack crypto portfolio with live API data built with PHP and MySQL
+Crypto portfolio with live API data built with PHP and MySQL
 
 ## Tech Stack
 PHP · MySQL
